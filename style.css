@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100svh;
+  background-color: rgb(45, 45, 45);
+}
+
+#linda {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#e {
+  stroke-dasharray: 379px;
+  stroke-dashoffset: 379px;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+#m {
+  stroke-dasharray: 586px;
+  stroke-dashoffset: 586px;
+  animation: line-anim 2s ease forwards 1.5s;
+}
+
+#a {
+  stroke-dasharray: 405px;
+  stroke-dashoffset: 405px;
+  animation: line-anim 2s ease forwards 3s;
+}
+#h {
+  stroke-dasharray: 449px;
+  stroke-dashoffset: 449px;
+  animation: line-anim 2s ease forwards 3.8s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
